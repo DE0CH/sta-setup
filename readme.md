@@ -4,6 +4,9 @@ The machines in the labs can be a pain in the ass to work with sometimes especia
 # Installation
 1. Clone this repo
 ```bash 
-$ git clone https://github.com/de0ch/sta-setup.sh
+$ git clone https://github.com/de0ch/sta-setup.git
 ```
-
+2. Run the setup script
+```bash 
+$ sta-setup/setup.sh
+```

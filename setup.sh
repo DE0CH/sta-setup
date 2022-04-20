@@ -24,8 +24,9 @@ ln -s c++-11 c++
 DIR=${PWD}
 cd ${HOME}
 REL=$(realpath --relative-to="${HOME}" "${DIR}")
-if [ -f "${DIR}/.zshrc" ]; then 
+if [ -f "${HOME}/.zshrc" ]; then 
     echo "~/.zshrc exists, moving it to ~/.zshrc.backup"
+    mv ${HOME}/.zshrc ${HOME}/.zshrc.backup
 fi
 ln -s ${DIR}/.zshrc .zshrc
 ln -s ${DIR}/.p10k.zsh .p10k.zsh
