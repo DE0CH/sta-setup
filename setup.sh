@@ -1,3 +1,4 @@
+DIR=SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 cd ${HOME}
 git clone https://github.com/Homebrew/brew .linuxbrew
 .linuxbrew/bin/brew update --force --quiet
@@ -21,7 +22,6 @@ ln -s g++-11 g++
 ln -s cpp-11 cpp 
 ln -s c++-11 c++
 
-DIR=SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 cd ${HOME}
 REL=$(realpath --relative-to="${HOME}" "${DIR}")
 if [ -f "${HOME}/.zshrc" ]; then 
