@@ -10,3 +10,12 @@ $ git clone https://github.com/de0ch/sta-setup.git
 ```bash 
 $ sta-setup/setup.sh
 ```
+
+# Troubleshooting
+1. Build failure with `brew install`
+The make complier on the lab machines is a bit broken. I haven't found a way to fix it yet, but you can workaround many build failures with `brew install --force-bottle` to use a "bottle" (pre-complied binary). Homebrew defaults to building from source because it is not installed in `/home/linuxbrew/.linuxbrew` (for which you don't have write permission). 
+
+# Customization
+The theme used is powerlevel10k, applied on oh-my-zsh. I used a font for p10k with the maximum font compatibility. If you want to customize the prompt look, run `p10k configure`. 
+
+You can also read more about the two packages to learn more what they can do. 
