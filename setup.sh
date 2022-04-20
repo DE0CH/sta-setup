@@ -1,4 +1,4 @@
-DIR=SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
+DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 cd ${HOME}
 git clone https://github.com/Homebrew/brew .linuxbrew
 .linuxbrew/bin/brew update --force --quiet
