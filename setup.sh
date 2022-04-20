@@ -16,13 +16,16 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 
 cd ${HOMEBREW_PREFIX}/bin
-ln -s gcc gcc-11
-ln -s g++ g++-1
-ln -s cpp cpp-11
-ln -s c++ c++-11
+ln -s gcc-11 gcc 
+ln -s g++-11 g++ 
+ln -s cpp-11 cpp 
+ln -s c++-11 c++
 
 DIR=${PWD}
 cd ${HOME}
 REL=$(realpath --relative-to="${HOME}" "${DIR}")
+if [ -f "${DIR}/.zshrc" ]; then 
+    echo "~/.zshrc exists, moving it to ~/.zshrc.backup"
+fi
 ln -s ${DIR}/.zshrc .zshrc
 ln -s ${DIR}/.p10k.zsh .p10k.zsh
