@@ -19,4 +19,4 @@ $ sta-setup/setup.sh
 # Customization
 The theme used is powerlevel10k, applied on oh-my-zsh. I used a font for p10k with the maximum font compatibility. If you want to customize the prompt look, run `p10k configure`. 
 
-You can also read more about the two packages to learn more what they can do. 
+You can also read more about the two packages to learn more about what they can do. 
