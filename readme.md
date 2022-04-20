@@ -10,6 +10,7 @@ $ git clone https://github.com/de0ch/sta-setup.git
 ```bash 
 $ sta-setup/setup.sh
 ```
+3. Restart your shell for the changes to take effect.
 
 # Troubleshooting
 1. Build failure with `brew install`.
