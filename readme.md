@@ -16,6 +16,9 @@ $ sta-setup/setup.sh
 
     The make complier on the lab machines is a bit broken. I haven't found a way to fix it yet, but you can workaround many build failures with `brew install --force-bottle` to use a "bottle" (pre-complied binary). Homebrew defaults to building from source because it is not installed in `/home/linuxbrew/.linuxbrew` (for which you don't have write permission). 
 
+2. Problem with PATH
+    Try to add the PATH in `~/.profile`, which will get loaded.
+
 # Customization
 The theme used is powerlevel10k, applied on oh-my-zsh. I used a font for p10k with the maximum font compatibility. If you want to customize the prompt look, run `p10k configure`. 
 
