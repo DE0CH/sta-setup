@@ -21,7 +21,7 @@ ln -s g++-11 g++
 ln -s cpp-11 cpp 
 ln -s c++-11 c++
 
-DIR=${PWD}
+DIR=SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 cd ${HOME}
 REL=$(realpath --relative-to="${HOME}" "${DIR}")
 if [ -f "${HOME}/.zshrc" ]; then 
