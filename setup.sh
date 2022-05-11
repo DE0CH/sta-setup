@@ -17,7 +17,9 @@ ln -s c++-11 c++
 cd ${HOME}
 NO_SHELL=false
 if [ -n "$BASH_VERSION" ]; then
-  echo "$(which zsh)" >> ${HOME}/.bashrc
+  BEFORE='[[ "$-" != *i* ]] || '
+  AFTER="$(which zsh)"
+  echo "$BEFORE$AFTER" >> ${HOME}/.bashrc
 elif [ -n "$ZSH_VERSION" ]; then
   :
 else
