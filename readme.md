@@ -3,7 +3,7 @@ The machines in the labs can sometimes be quite difficult to work especially wit
 
 # Installation
 ```bash
-/usr/bin/env bash -c "$(curl -fsSL https://raw.githubusercontent.com/STAOJ/sta-setup/master/setup.sh)"
+/usr/bin/env bash -c "$(curl -fsSL https://raw.githubusercontent.com/CP-STA/sta-setup/master/setup.sh)"
 ```
 
 And then restart your shell for it to take effect.
